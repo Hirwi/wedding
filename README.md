@@ -1,6 +1,3 @@
-# wedding
-Wedding
-=======
 Symfony Standard Edition
 ========================
 
