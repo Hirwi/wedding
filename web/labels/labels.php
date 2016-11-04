@@ -2,12 +2,12 @@
 
 return array(
 	'de' => [
-		'label1' => 'test1de',
-		'label2' => 'test2de'
+		'startsite' => 'Startseite',
+		'startsitetext1' => 'Willkommen auf unsere Webseite!'
 	],
 	'fi' => [
-		'label1' => 'test1fi',
-		'label2' => 'test2fi'
+		'startsite'	=> 'Etusivu',
+		'startsitetext1' => 'Tervetuloa kotisivullemme!'
 	]
 	
 );

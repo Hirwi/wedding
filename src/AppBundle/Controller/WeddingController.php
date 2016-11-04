@@ -28,15 +28,9 @@ class WeddingController extends Controller
     public function startAction(Request $request)
     {
 		$session = $request->getSession();
-		$lang = $session->get('contentlanguage');
-		$this->lang = $lang;
-		
 		$this->labels = include('labels/labels.php');
-		$this->labels = $this->labels[$this->lang];
-		
-		echo "..";
-		echo $lang;
-		
+		$this->labels = $this->labels[$session->get('contentlanguage')];
+			
         return $this->render('wedding/start.html.twig', array(
             'labels' => $this->labels,
         ));

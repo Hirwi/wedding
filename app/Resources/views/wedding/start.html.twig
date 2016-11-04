@@ -3,7 +3,7 @@
 
 {% block title %}{{ parent() }}: Startsite{% endblock %}
 
-{% block pageheader %}Startsite{% endblock %}
+{% block pageheader %}{{ labels.startsite }}{% endblock %}
 
 
 {% block body %}
@@ -11,9 +11,8 @@
 		<div class="panel panel-default">
 			<div class="panel-body">
 				<p>
-				,,{{ labels.label1 }},,
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-				
+					{{ labels.startsitetext1 }}
+				</p>
 			</div>
 		</div>
 	</div>
