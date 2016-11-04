@@ -5,20 +5,40 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 
 
 class WeddingController extends Controller
 {
+	
+	private $labels = [];
+	
+	private $lang = 'fi';
+	
+	function __construct()
+	{
+			//$this->labels = include('labels/labels.php');
+			//$this->labels = $this->labels[$this->lang];
+	}
+	
+	
     /**
      * @Route("/wedding/start", name="start")
      */
-    public function startAction()
+    public function startAction(Request $request)
     {
+		$session = $request->getSession();
+		$lang = $session->get('contentlanguage');
+		$this->lang = $lang;
 		
-        $number = mt_rand(0, 100);
+		$this->labels = include('labels/labels.php');
+		$this->labels = $this->labels[$this->lang];
+		
+		echo "..";
+		echo $lang;
 		
         return $this->render('wedding/start.html.twig', array(
-            'number' => $number,
+            'labels' => $this->labels,
         ));
     }
 	
@@ -30,7 +50,7 @@ class WeddingController extends Controller
     {
 		
         return $this->render('wedding/links.html.twig', array(
-            'number' => '223',
+            'labels' => $this->labels,
         ));
     }
 	
@@ -42,7 +62,7 @@ class WeddingController extends Controller
     {
 		
         return $this->render('wedding/contact.html.twig', array(
-            'number' => '223',
+            'labels' => $this->labels,
         ));
     }
 }
