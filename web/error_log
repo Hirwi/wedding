@@ -1,0 +1,2 @@
+[05-Nov-2016 01:05:39 Europe/Zurich] PHP Fatal error:  Call to a member function get() on null in /home/derfinne/public_html/wedding/src/AppBundle/Controller/WeddingController.php on line 31
+[05-Nov-2016 01:11:28 Europe/Zurich] PHP Parse error:  syntax error, unexpected 'Location' (T_STRING) in /home/derfinne/public_html/wedding/src/AppBundle/Controller/LanguageController.php on line 32
