@@ -14,13 +14,14 @@ class DefaultController extends Controller
     public function indexAction(Request $request)
     {
 		$session = $request->getSession();
+		$lang = $session->get('contentlanguage');
+		$lang = !empty($lang) ? $lang : 'fi';
 		$this->labels = include('labels/labels.php');
-		$this->labels = $this->labels[$session->get('contentlanguage')];
 		
         // replace this example code with whatever you need
         return $this->render('default/index.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
-			'labels' => $this->labels
+			'labels' => $this->labels[$lang]
         ]);
     }
 }
