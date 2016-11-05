@@ -27,7 +27,11 @@ class LanguageController extends Controller
 		$session = $request->getSession();
 		$session->set('contentlanguage', $lang);
 		
-		header('Location: http://localhost:8000/wedding/start');
+		if(!empty($_SERVER['HTTP_REFERER'])){
+			header('Location: '.$_SERVER['HTTP_REFERER']);
+		}else{
+			header('Location: /');
+		}
 		exit;
 		
 		//return $this->redirectToRoute('wedding/start/');

@@ -40,8 +40,11 @@ class WeddingController extends Controller
 	/**
      * @Route("/wedding/links", name="links")
      */
-    public function linksAction()
+    public function linksAction(Request $request)
     {
+		$session = $request->getSession();
+		$this->labels = include('labels/labels.php');
+		$this->labels = $this->labels[$session->get('contentlanguage')];
 		
         return $this->render('wedding/links.html.twig', array(
             'labels' => $this->labels,
@@ -52,8 +55,11 @@ class WeddingController extends Controller
 	/**
      * @Route("/wedding/contact", name="contact")
      */
-    public function contactAction()
+    public function contactAction(Request $request)
     {
+		$session = $request->getSession();
+		$this->labels = include('labels/labels.php');
+		$this->labels = $this->labels[$session->get('contentlanguage')];
 		
         return $this->render('wedding/contact.html.twig', array(
             'labels' => $this->labels,
