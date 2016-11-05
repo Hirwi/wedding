@@ -28,11 +28,12 @@ class WeddingController extends Controller
     public function startAction(Request $request)
     {
 		$session = $request->getSession();
+		$lang = $session->get('contentlanguage');
+		$lang = !empty($lang) ? $lang : 'fi';
 		$this->labels = include('labels/labels.php');
-		$this->labels = $this->labels[$session->get('contentlanguage')];
 			
         return $this->render('wedding/start.html.twig', array(
-            'labels' => $this->labels,
+            'labels' => $this->labels[$lang],
         ));
     }
 	
@@ -43,11 +44,12 @@ class WeddingController extends Controller
     public function linksAction(Request $request)
     {
 		$session = $request->getSession();
+		$lang = $session->get('contentlanguage');
+		$lang = !empty($lang) ? $lang : 'fi';
 		$this->labels = include('labels/labels.php');
-		$this->labels = $this->labels[$session->get('contentlanguage')];
 		
         return $this->render('wedding/links.html.twig', array(
-            'labels' => $this->labels,
+            'labels' => $this->labels[$lang],
         ));
     }
 	
@@ -58,11 +60,12 @@ class WeddingController extends Controller
     public function contactAction(Request $request)
     {
 		$session = $request->getSession();
+		$lang = $session->get('contentlanguage');
+		$lang = !empty($lang) ? $lang : 'fi';
 		$this->labels = include('labels/labels.php');
-		$this->labels = $this->labels[$session->get('contentlanguage')];
 		
         return $this->render('wedding/contact.html.twig', array(
-            'labels' => $this->labels,
+            'labels' => $this->labels[$lang],
         ));
     }
 }
