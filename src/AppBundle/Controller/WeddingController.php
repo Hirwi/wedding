@@ -100,4 +100,20 @@ class WeddingController extends Controller
             'labels' => $this->labels[$lang],
         ));
     }
+	
+	
+	/**
+     * @Route("/wedding/locations", name="locations")
+     */
+    public function locationsAction(Request $request)
+    {
+		$session = $request->getSession();
+		$lang = $session->get('contentlanguage');
+		$lang = !empty($lang) ? $lang : 'fi';
+		$this->labels = include('labels/labels.php');
+		
+        return $this->render('wedding/locations.html.twig', array(
+            'labels' => $this->labels[$lang],
+        ));
+    }
 }

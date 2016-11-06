@@ -5,7 +5,9 @@ return array(
 		'accommodationsite' => 'Unterkunft',
 		'arrivingsite'	=> 'Anreise',
 		'contactsite'	=> 'Kontakt',
-		'hotel'		=> 'Hotel',
+		'hotels'		=> 'Hotellen',
+		'locationssite' => 'Festorte',
+		'rentableaccommodations' => 'Wohnungen zum Mieten',
 		'startsite' => 'Startseite',
 		'startsitetext1' => 'Willkommen auf unsere Webseite! Hier findest Du die wichtigsten Informationen bezüglich unserer Hochzeit.'
 		
@@ -15,8 +17,10 @@ return array(
 	'fi' => [
 		'accommodationsite' => 'Majoitus',
 		'arrivingsite'	=> 'Saapuminen',
-		'contactsite'	=> 'Yhteydenotto',
-		'hotel'				=> 'Hotelli',
+		'contactsite'	=> 'Yhteystiedot',
+		'hotels'				=> 'Hotellit',
+		'locationssite' => 'Tapahtumapaikat',
+		'rentableaccommodations' => 'Wohnungen zum Mieten',
 		'startsite'	=> 'Etusivu',
 		'startsitetext1' => 'Tervetuloa hääsivullemme! Täältä löydät oleellisimmat tiedot häihimme liittyen.',
 		
