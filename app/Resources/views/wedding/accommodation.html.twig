@@ -1,0 +1,27 @@
+{# app/Resources/views/wedding/accommodation.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }}: {{ labels.accommodationsite }}{% endblock %}
+
+{% block pageheader %}{{ labels.accommodationsite }}{% endblock %}
+
+
+{% block body %}
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<h3>{{ labels.hotel }}</h3>
+				<div>
+					<a href="https://www.laplandhotels.com/EN/urban-hotels/oulu/lapland-hotel-oulu-2.html" target="_blank">Lapland Hotel Oulu</a>
+				</div>
+				<div>
+					<a href="http://lasaretti.com/en/" target="_blank">Hotel Lasaretti</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<!-- /.row -->
+{% endblock %}	
+		

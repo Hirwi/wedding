@@ -43,21 +43,24 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/language/changelanguage/fi">Fi</a>
-				<a class="navbar-brand" href="/language/changelanguage/de">De</a>
+                <a class="navbar-brand" href="/language/changelanguage/fi">FI</a>
+				<a class="navbar-brand" href="/language/changelanguage/de">DE</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
 			{% block navigationtopright %}
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="/">Start</a>
+							<a href="/">{{ labels.startsite }}</a>
 						</li>
 						<li>
-							<a href="/wedding/links">Links</a>
+							<a href="/wedding/arriving">{{ labels.arrivingsite }}</a>
 						</li>
 						<li>
-							<a href="/wedding/contact">Contact</a>
+							<a href="/wedding/accommodation">{{ labels.accommodationsite }}</a>
+						</li>
+						<li>
+							<a href="/wedding/contact">{{ labels.contactsite }}</a>
 						</li>
 					</ul>
 				</div>
@@ -74,9 +77,6 @@
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-			<li data-target="#myCarousel" data-slide-to="3"></li>
-			<li data-target="#myCarousel" data-slide-to="4"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -85,44 +85,18 @@
                 <div class="fill" style="background-image:url('/img/pic1.jpg');"></div>
 				<!--<div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>-->
 				<div class="carousel-caption">
-                    <h2>Love is in the air <3</h2>
+                    <h3><i>"True love stories never have endings."</i></h3>
                 </div>
             </div>
             <div class="item">
                 <div class="fill" style="background-image:url('/img/pic2.jpg');"></div>
                 <div class="carousel-caption">
-                    <h2>Kalakaverit <3<3</h2>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('/img/pic3.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2>Forever yours <3<3<3<3</h2>
-                </div>
-            </div>
-			<div class="item">
-                <div class="fill" style="background-image:url('/img/pic4.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2>Mussukat <3</h2>
-                </div>
-            </div>
-			<div class="item">
-                <div class="fill" style="background-image:url('/img/pic5.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2>Satu <3 Ari</h2>
+                    <h3><i>"Whatever our souls are made of, his and mine are the same."</i></h3>
                 </div>
             </div>
         </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </header>
-
+	</header>	
+		
     <!-- Page Content -->
     <div class="container">
 
@@ -252,7 +226,7 @@
         <hr>
 
         <!-- Footer -->
-        <footer>
+        <footer style="margin-top: 50px;">
                 <div class="col-md-12">
                     <p>Copyright &copy; Ari & Satu 2016</p>
                 </div>
@@ -270,7 +244,7 @@
     <!-- Script to Activate the Carousel -->
 	<script>
     $('.carousel').carousel({
-        interval: 4000 //changes the speed
+        interval: 5000 //changes the speed
     })
     </script>
 

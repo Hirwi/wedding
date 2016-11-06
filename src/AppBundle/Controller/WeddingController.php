@@ -68,4 +68,36 @@ class WeddingController extends Controller
             'labels' => $this->labels[$lang],
         ));
     }
+	
+	
+	/**
+     * @Route("/wedding/arriving", name="arriving")
+     */
+    public function arrivingAction(Request $request)
+    {
+		$session = $request->getSession();
+		$lang = $session->get('contentlanguage');
+		$lang = !empty($lang) ? $lang : 'fi';
+		$this->labels = include('labels/labels.php');
+		
+        return $this->render('wedding/arriving.html.twig', array(
+            'labels' => $this->labels[$lang],
+        ));
+    }
+	
+	
+	/**
+     * @Route("/wedding/accommodation", name="accommodation")
+     */
+    public function accommodationAction(Request $request)
+    {
+		$session = $request->getSession();
+		$lang = $session->get('contentlanguage');
+		$lang = !empty($lang) ? $lang : 'fi';
+		$this->labels = include('labels/labels.php');
+		
+        return $this->render('wedding/accommodation.html.twig', array(
+            'labels' => $this->labels[$lang],
+        ));
+    }
 }
