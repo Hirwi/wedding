@@ -8,6 +8,7 @@ return array(
 		'hotels'		=> 'Hotellen',
 		'locationssite' => 'Festorte',
 		'rentableaccommodations' => 'Wohnungen zum Mieten',
+		'registrationsite' => 'Anmeldung',
 		'startsite' => 'Startseite',
 		'startsitetext1' => 'Willkommen auf unsere Webseite! Hier findest Du die wichtigsten Informationen bezüglich unserer Hochzeit.'
 		
@@ -21,6 +22,7 @@ return array(
 		'hotels'				=> 'Hotellit',
 		'locationssite' => 'Tapahtumapaikat',
 		'rentableaccommodations' => 'Wohnungen zum Mieten',
+		'registrationsite' => 'Ilmoittautuminen',
 		'startsite'	=> 'Etusivu',
 		'startsitetext1' => 'Tervetuloa hääsivullemme! Täältä löydät oleellisimmat tiedot häihimme liittyen.',
 		
