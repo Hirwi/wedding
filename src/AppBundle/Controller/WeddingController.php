@@ -205,7 +205,20 @@ class WeddingController extends Controller
 		->getForm();
 
 		
-		$form->handleRequest($request);
+		if ($request->isMethod('POST')) {
+			$form->submit($request->request->get($form->getName()));
+
+			if ($form->isSubmitted() && $form->isValid()) {
+				$data = $form->getData();
+				echo "t11";
+				echo "<pre>";
+				print_r($data);
+				exit;
+				// perform some action...
+
+				return $this->redirectToRoute('task_success');
+			}
+		}
 		
 		echo "t33";
 		$data = $form->getData();
