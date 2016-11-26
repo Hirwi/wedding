@@ -3,9 +3,16 @@
 namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\Form\Forms;
+use Symfony\Component\Form\Extension\Core\Type\FormType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
 
 
 class WeddingController extends Controller
@@ -119,17 +126,97 @@ class WeddingController extends Controller
 	
 	
 	/**
-     * @Route("/wedding/registration", name="registration")
+     * @Route("/wedding/gifts", name="gifts")
      */
-    public function registrationAction(Request $request)
+    public function giftsAction(Request $request)
     {
 		$session = $request->getSession();
 		$lang = $session->get('contentlanguage');
 		$lang = !empty($lang) ? $lang : 'fi';
 		$this->labels = include('labels/labels.php');
 		
-        return $this->render('wedding/registration.html.twig', array(
+        return $this->render('wedding/gifts.html.twig', array(
             'labels' => $this->labels[$lang],
         ));
+	}
+	
+	
+	/**
+     * @Route("/wedding/registration", name="registration")
+     */
+    public function registrationAction(Request $request)
+    {
+		$formFactory = Forms::createFormFactory();
+		$session = $request->getSession();
+		
+		$lang = $session->get('contentlanguage');
+		$lang = !empty($lang) ? $lang : 'fi';
+		$this->labels = include('labels/labels.php');
+	
+		$form = $formFactory->createBuilder(FormType::class, null, array(
+			'action' => '/wedding/registrate',
+			'method' => 'POST',
+		))
+		->add($this->labels[$lang]['name'], TextType::class)
+		->add($this->labels[$lang]['isattending'], ChoiceType::class, array(
+			'choices'  => array(
+				$this->labels[$lang]['yes'] => true,
+				$this->labels[$lang]['no'] => false,
+			),
+		))
+		->add($this->labels[$lang]['allergies'], TextareaType::class)
+		->add($this->labels[$lang]['notices'], TextareaType::class)
+		->getForm();
+
+		
+		
+        return $this->render('wedding/registration.html.twig', array(
+            'labels' => $this->labels[$lang],
+			'form' => $form->createView(),
+        ));
     }
+	
+	
+	
+	/**
+     * @Route("/wedding/registrate", name="registrate")
+     */
+    public function registrateAction(Request $request)
+    {
+		$formFactory = Forms::createFormFactory();
+		$session = $request->getSession();
+		$lang = $session->get('contentlanguage');
+		$lang = !empty($lang) ? $lang : 'fi';
+		$this->labels = include('labels/labels.php');
+		
+		$form = $formFactory->createBuilder(FormType::class, null, array(
+			'action' => '/wedding/registrate',
+			'method' => 'POST',
+		))
+		->add($this->labels[$lang]['name'], TextType::class)
+		->add($this->labels[$lang]['isattending'], ChoiceType::class, array(
+			'choices'  => array(
+				$this->labels[$lang]['yes'] => true,
+				$this->labels[$lang]['no'] => false,
+			),
+		))
+		->add($this->labels[$lang]['allergies'], TextareaType::class)
+		->add($this->labels[$lang]['notices'], TextareaType::class)
+		->getForm();
+
+		
+		$form->handleRequest($request);
+		
+		echo "t33";
+		$data = $form->getData();
+		echo "<pre>";
+		print_r($data);
+		exit;
+		
+		
+		
+    }
+	
+	
+	
 }
