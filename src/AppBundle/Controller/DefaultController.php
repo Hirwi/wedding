@@ -21,6 +21,12 @@ class DefaultController extends Controller
 		$lang = !empty($lang) ? $lang : 'fi';
 		$this->labels = include('labels/labels.php');
 		
+		/*
+		echo "<pre>";
+		print_r($this->labels);
+		exit;
+		*/
+		
         // replace this example code with whatever you need
         return $this->render('default/index.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,

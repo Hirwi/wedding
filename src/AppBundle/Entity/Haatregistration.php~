@@ -1,0 +1,58 @@
+<?php
+// src/AppBundle/Entity/Haatregistration.php
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="haat_registration")
+ */
+class Haatregistration
+{
+	
+	/**
+     * @ORM\Column(type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $nregistrationid;
+	
+	/**
+     * @ORM\Column(type="integer")
+     */
+    private $nisattending;
+	
+	/**
+     * @ORM\Column(type="text")
+     */
+    private $cname;
+	
+	/**
+     * @ORM\Column(type="textarea")
+     */
+    private $mallergies;
+	
+	/**
+     * @ORM\Column(type="textarea")
+     */
+    private $mmusicwishes;
+
+	/**
+     * @ORM\Column(type="textarea")
+     */
+    private $mnotices;
+	
+	/**
+     * @ORM\Column(type="text")
+     */
+    private $cpassword;
+	
+	/**
+     * @ORM\Column(type="datetime")
+     */
+    private $dregistrationdatetime;
+	
+
+}

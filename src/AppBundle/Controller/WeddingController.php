@@ -157,15 +157,17 @@ class WeddingController extends Controller
 			'action' => '/wedding/registrate',
 			'method' => 'POST',
 		))
-		->add($this->labels[$lang]['name'], TextType::class)
 		->add($this->labels[$lang]['isattending'], ChoiceType::class, array(
 			'choices'  => array(
-				$this->labels[$lang]['yes'] => true,
-				$this->labels[$lang]['no'] => false,
+				$this->labels[$lang]['no'] => 2,
+				$this->labels[$lang]['yes'] => 1,
 			),
 		))
+		->add($this->labels[$lang]['name'], TextType::class)
 		->add($this->labels[$lang]['allergies'], TextareaType::class)
+		->add($this->labels[$lang]['musicwishes'], TextareaType::class)
 		->add($this->labels[$lang]['notices'], TextareaType::class)
+		->add($this->labels[$lang]['password'], TextType::class)
 		->getForm();
 
 		
@@ -193,15 +195,17 @@ class WeddingController extends Controller
 			'action' => '/wedding/registrate',
 			'method' => 'POST',
 		))
-		->add($this->labels[$lang]['name'], TextType::class)
 		->add($this->labels[$lang]['isattending'], ChoiceType::class, array(
 			'choices'  => array(
-				$this->labels[$lang]['yes'] => true,
-				$this->labels[$lang]['no'] => false,
+				$this->labels[$lang]['no'] => 2,
+				$this->labels[$lang]['yes'] => 1,
 			),
 		))
+		->add($this->labels[$lang]['name'], TextType::class)
 		->add($this->labels[$lang]['allergies'], TextareaType::class)
+		->add($this->labels[$lang]['musicwishes'], TextareaType::class)
 		->add($this->labels[$lang]['notices'], TextareaType::class)
+		->add($this->labels[$lang]['password'], TextType::class)
 		->getForm();
 
 		

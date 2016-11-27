@@ -3,7 +3,7 @@
 
 {% block title %}{{ parent() }}: {{ labels.startsite }}{% endblock %}
 
-{% block pageheader %}{{ labels.startsite }}{% endblock %}
+{% block pageheader %}{{ labels.heartlywelcome }}{% endblock %}
 
 
 {% block body %}
@@ -11,7 +11,7 @@
 		<div class="panel panel-default">
 			<div class="panel-body">
 				<p>
-					{{ labels.startsitetext1 }}
+					{{ labels.startsitetext1|raw }}
 				</p>
 			</div>
 		</div>
