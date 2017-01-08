@@ -1,0 +1,14 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: haat
+    database_user: root
+    database_password: null
+    mailer_transport: smtp
+    mailer_host: smtp.live.com
+    mailer_user: ari.ikalainen@hotmail.com
+    mailer_password: petrus7813290384
+    mailer_port: 465
+    mailer_encryption: ssl
+    secret: ThisTokenIsNotSoSecretChangeIt13
