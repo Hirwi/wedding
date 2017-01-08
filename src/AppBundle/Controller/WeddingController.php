@@ -234,14 +234,14 @@ class WeddingController extends Controller
 
 			if ($form->isSubmitted() && $form->isValid()) {
 				$data = $form->getData();
-				
-				$this->sendRegistrationMail($data, $request);
-
-				return $this->redirectToRoute('/wedding/registration');
+				if($data['password'] === 'arisatu'){
+					$this->sendRegistrationMail($data, $request);
+					return $this->redirectToRoute('registrationcompleted');
+				}
 			}
 		}
 		
-		echo "done1";
+		echo "error";
 		exit;
     }
 	
@@ -278,6 +278,25 @@ class WeddingController extends Controller
 		$transport = $this->get('swiftmailer.transport.real');
 		$spool->flushQueue($transport);
 	}
+	
+	
+	
+	/**
+     * @Route("/wedding/registrationcompleted", name="registrationcompleted")
+     */
+    public function registrationcompletedAction(Request $request)
+    {
+		$session = $request->getSession();
+		
+		$lang = $session->get('contentlanguage');
+		$lang = !empty($lang) ? $lang : 'fi';
+		$this->labels = include('labels/labels.php');
+	
+		
+        return $this->render('wedding/registrationcompleted.html.twig', array(
+            'labels' => $this->labels[$lang],
+        ));
+    }
 	
 	
 }

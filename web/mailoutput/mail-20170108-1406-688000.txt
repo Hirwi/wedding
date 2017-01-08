@@ -1,0 +1,13 @@
+To: ari.ikalainen@hotmail.com
+Subject: Ilmoittautumisvahvistus
+Message-ID: <65302b30ff2d7fb7baeba4ddf44997da@127.0.0.1>
+Date: Sun, 08 Jan 2017 15:06:31 +0100
+From: info@derfinne.ch
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<h3>You did it! You registered!</h3>
+
+Hi etst! You're successfully regi=
+stered.
