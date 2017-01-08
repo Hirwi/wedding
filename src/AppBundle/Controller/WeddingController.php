@@ -235,7 +235,7 @@ class WeddingController extends Controller
 			if ($form->isSubmitted() && $form->isValid()) {
 				$data = $form->getData();
 				
-				$this->sendRegistrationMail($data);
+				$this->sendRegistrationMail($data, $request);
 
 				return $this->redirectToRoute('task_success');
 			}
@@ -250,7 +250,7 @@ class WeddingController extends Controller
 	* Send Registration-Form
 	*
 	*/
-	private function sendRegistrationMail($data)
+	private function sendRegistrationMail($data, $request)
 	{
 		$session = $request->getSession();
 		$lang = $session->get('contentlanguage');
