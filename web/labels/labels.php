@@ -18,6 +18,7 @@ return array(
 		'notices' => 'Bemerkungen',
 		'password' => 'Passwort',
 		'rentableaccommodations' => 'Wohnungen zum Mieten',
+		'registrationmailtitle' => 'Anmeldungsbestätigung',
 		'registrationsite' => 'Anmeldung',
 		'startsite' => 'Startseite',
 		'startsitetext1' => 'Mahtavaa, että olet löytänyt tiesi pienimuotoisille hääsivuillemme. Sivuiltamme löydät ilmoittautumislomakkeen, jonka 
@@ -49,6 +50,7 @@ return array(
 		'notices' => 'Huomiot',
 		'password' => 'Salasana',
 		'rentableaccommodations' => 'Wohnungen zum Mieten',
+		'registrationmailtitle' => 'Ilmoittautumisvahvistus',
 		'registrationsite' => 'Ilmoittautuminen',
 		'startsite'	=> 'Etusivu',
 		'startsitetext1' => 'Mahtavaa, että olet löytänyt tiesi pienimuotoisille hääsivuillemme. Sivuiltamme löydät ilmoittautumislomakkeen, jonka 

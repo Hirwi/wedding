@@ -236,33 +236,30 @@ class WeddingController extends Controller
 				$data = $form->getData();
 				
 				$this->sendRegistrationMail($data);
-				
-				
-				echo "t112";
-				echo "<pre>";
-				print_r($data);
-				exit;
-				// perform some action...
 
 				return $this->redirectToRoute('task_success');
 			}
 		}
 		
-		echo "t33";
-		$data = $form->getData();
-		echo "<pre>";
-		print_r($data);
+		echo "done1";
 		exit;
-		
-		
-		
     }
 	
 	
+	/*
+	* Send Registration-Form
+	*
+	*/
 	private function sendRegistrationMail($data)
 	{
+		$lang = $session->get('contentlanguage');
+		$lang = !empty($lang) ? $lang : 'fi';
+		$this->labels = include('labels/labels.php');
+		
+		$name = $data['name'];
+		
 		$message = \Swift_Message::newInstance()
-		->setSubject('Registration')
+		->setSubject($this->labels[$lang]['registrationmailtitle'])
 		->setFrom('info@derfinne.ch')
 		->setTo('ari.ikalainen@hotmail.com')
 		->setBody(
@@ -272,14 +269,12 @@ class WeddingController extends Controller
 					array('name' => $name)
 				),
 				'text/html');
-		# I removed this line: $this->get('mailer')->send($message);
 
 		$mailer = $this->get('mailer');
 		$mailer->send($message);
 
 		$spool = $mailer->getTransport()->getSpool();
 		$transport = $this->get('swiftmailer.transport.real');
-
 		$spool->flushQueue($transport);
 	}
 	
