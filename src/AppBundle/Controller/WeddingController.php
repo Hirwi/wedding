@@ -237,7 +237,7 @@ class WeddingController extends Controller
 				
 				$this->sendRegistrationMail($data, $request);
 
-				return $this->redirectToRoute('task_success');
+				return $this->redirectToRoute('/wedding/registration');
 			}
 		}
 		
