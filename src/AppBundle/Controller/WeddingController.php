@@ -252,6 +252,7 @@ class WeddingController extends Controller
 	*/
 	private function sendRegistrationMail($data)
 	{
+		$session = $request->getSession();
 		$lang = $session->get('contentlanguage');
 		$lang = !empty($lang) ? $lang : 'fi';
 		$this->labels = include('labels/labels.php');
