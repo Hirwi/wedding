@@ -145,64 +145,7 @@ class WeddingController extends Controller
      * @Route("/wedding/registration", name="registration")
      */
     public function registrationAction(Request $request)
-    {
-		/*
-		$name = 'namevariable here';
-		
-		$message = \Swift_Message::newInstance()
-        ->setSubject('Hello Email')
-        ->setFrom('ari.ikalainen@hotmail.com')
-        ->setTo('ari.ikalainen@hotmail.com')
-        ->setBody(
-            $this->renderView(
-                // app/Resources/views/Emails/registration.html.twig
-                'Emails/registration.html.twig',
-                array('name' => $name)
-            ),
-            'text/html'
-        )
-		*/
-        /*
-         * If you also want to include a plaintext version of the message
-        ->addPart(
-            $this->renderView(
-                'Emails/registration.txt.twig',
-                array('name' => $name)
-            ),
-            'text/plain'
-        )
-        */
-    //;
-	
-	$message = \Swift_Message::newInstance()
-    ->setSubject('Registration')
-    ->setFrom('info@derfinne.ch')
-    ->setTo('ari.ikalainen@hotmail.com')
-    ->setBody(
-			$this->renderView(
-                // app/Resources/views/Emails/registration.html.twig
-                'Emails/registration.html.twig',
-                array('name' => $name)
-            ),
-            'text/html');
-	# I removed this line: $this->get('mailer')->send($message);
-
-	$mailer = $this->get('mailer');
-	$mailer->send($message);
-
-	$spool = $mailer->getTransport()->getSpool();
-	$transport = $this->get('swiftmailer.transport.real');
-
-	$spool->flushQueue($transport);
-	
-	
-    //$this->get('mailer')->send($message);
-	echo "sent";
-	exit;
-		
-		
-		
-		
+    {		
 		$formFactory = Forms::createFormFactory();
 		$session = $request->getSession();
 		
@@ -291,6 +234,10 @@ class WeddingController extends Controller
 
 			if ($form->isSubmitted() && $form->isValid()) {
 				$data = $form->getData();
+				
+				$this->sendRegistrationMail($data);
+				
+				
 				echo "t112";
 				echo "<pre>";
 				print_r($data);
@@ -311,6 +258,30 @@ class WeddingController extends Controller
 		
     }
 	
+	
+	private function sendRegistrationMail($data)
+	{
+		$message = \Swift_Message::newInstance()
+		->setSubject('Registration')
+		->setFrom('info@derfinne.ch')
+		->setTo('ari.ikalainen@hotmail.com')
+		->setBody(
+				$this->renderView(
+					// app/Resources/views/Emails/registration.html.twig
+					'Emails/registration.html.twig',
+					array('name' => $name)
+				),
+				'text/html');
+		# I removed this line: $this->get('mailer')->send($message);
+
+		$mailer = $this->get('mailer');
+		$mailer->send($message);
+
+		$spool = $mailer->getTransport()->getSpool();
+		$transport = $this->get('swiftmailer.transport.real');
+
+		$spool->flushQueue($transport);
+	}
 	
 	
 }
