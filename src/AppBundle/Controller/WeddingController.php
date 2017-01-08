@@ -146,6 +146,7 @@ class WeddingController extends Controller
      */
     public function registrationAction(Request $request)
     {
+		/*
 		$name = 'namevariable here';
 		
 		$message = \Swift_Message::newInstance()
@@ -160,6 +161,7 @@ class WeddingController extends Controller
             ),
             'text/html'
         )
+		*/
         /*
          * If you also want to include a plaintext version of the message
         ->addPart(
@@ -170,9 +172,26 @@ class WeddingController extends Controller
             'text/plain'
         )
         */
-    ;
+    //;
 	
-    $this->get('mailer')->send($message);
+	$message = \Swift_Message::newInstance()
+    ->setSubject('mana')
+    ->setFrom('ari.ikalainen@hotmail.com')
+    ->setTo('ari.ikalainen@hotmail.com')
+    ->setBody('this is test');
+	# I removed this line: $this->get('mailer')->send($message);
+
+	$mailer = $this->get('mailer');
+
+	$mailer->send($message);
+
+	$spool = $mailer->getTransport()->getSpool();
+	$transport = $this->get('swiftmailer.transport.real');
+
+	$spool->flushQueue($transport);
+	
+	
+    //$this->get('mailer')->send($message);
 	echo "sent";
 	exit;
 		
