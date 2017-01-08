@@ -176,7 +176,7 @@ class WeddingController extends Controller
 	
 	$message = \Swift_Message::newInstance()
     ->setSubject('Registration')
-    ->setFrom('ari.ikalainen@hotmail.com')
+    ->setFrom('info@derfinne.ch')
     ->setTo('ari.ikalainen@hotmail.com')
     ->setBody(
 			$this->renderView(
