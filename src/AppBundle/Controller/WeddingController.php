@@ -175,14 +175,19 @@ class WeddingController extends Controller
     //;
 	
 	$message = \Swift_Message::newInstance()
-    ->setSubject('mana')
+    ->setSubject('Registration')
     ->setFrom('ari.ikalainen@hotmail.com')
     ->setTo('ari.ikalainen@hotmail.com')
-    ->setBody('this is test');
+    ->setBody(
+			$this->renderView(
+                // app/Resources/views/Emails/registration.html.twig
+                'Emails/registration.html.twig',
+                array('name' => $name)
+            ),
+            'text/html');
 	# I removed this line: $this->get('mailer')->send($message);
 
 	$mailer = $this->get('mailer');
-
 	$mailer->send($message);
 
 	$spool = $mailer->getTransport()->getSpool();
