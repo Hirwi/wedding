@@ -146,6 +146,39 @@ class WeddingController extends Controller
      */
     public function registrationAction(Request $request)
     {
+		$name = 'namevariable here';
+		
+		$message = \Swift_Message::newInstance()
+        ->setSubject('Hello Email')
+        ->setFrom('ari.ikalainen@hotmail.com')
+        ->setTo('ari.ikalainen@hotmail.com')
+        ->setBody(
+            $this->renderView(
+                // app/Resources/views/Emails/registration.html.twig
+                'Emails/registration.html.twig',
+                array('name' => $name)
+            ),
+            'text/html'
+        )
+        /*
+         * If you also want to include a plaintext version of the message
+        ->addPart(
+            $this->renderView(
+                'Emails/registration.txt.twig',
+                array('name' => $name)
+            ),
+            'text/plain'
+        )
+        */
+    ;
+	
+    $this->get('mailer')->send($message);
+	echo "sent";
+	exit;
+		
+		
+		
+		
 		$formFactory = Forms::createFormFactory();
 		$session = $request->getSession();
 		
@@ -163,11 +196,21 @@ class WeddingController extends Controller
 				$this->labels[$lang]['yes'] => 1,
 			),
 		))
-		->add($this->labels[$lang]['name'], TextType::class)
-		->add($this->labels[$lang]['allergies'], TextareaType::class)
-		->add($this->labels[$lang]['musicwishes'], TextareaType::class)
-		->add($this->labels[$lang]['notices'], TextareaType::class)
-		->add($this->labels[$lang]['password'], TextType::class)
+		->add('name', TextType::class, array(
+			'label' => $this->labels[$lang]['name'],
+		))
+		->add('allergies', TextareaType::class, array(
+			'label' => $this->labels[$lang]['allergies'],
+		))
+		->add('musicwishes', TextareaType::class, array(
+			'label' => $this->labels[$lang]['musicwishes'],
+		))
+		->add('notices', TextareaType::class, array(
+			'label' => $this->labels[$lang]['notices'],
+		))
+		->add('password', TextType::class, array(
+			'label' => $this->labels[$lang]['password'],
+		))
 		->getForm();
 
 		
@@ -201,11 +244,21 @@ class WeddingController extends Controller
 				$this->labels[$lang]['yes'] => 1,
 			),
 		))
-		->add($this->labels[$lang]['name'], TextType::class)
-		->add($this->labels[$lang]['allergies'], TextareaType::class)
-		->add($this->labels[$lang]['musicwishes'], TextareaType::class)
-		->add($this->labels[$lang]['notices'], TextareaType::class)
-		->add($this->labels[$lang]['password'], TextType::class)
+		->add('name', TextType::class, array(
+			'label' => $this->labels[$lang]['name'],
+		))
+		->add('allergies', TextareaType::class, array(
+			'label' => $this->labels[$lang]['allergies'],
+		))
+		->add('musicwishes', TextareaType::class, array(
+			'label' => $this->labels[$lang]['musicwishes'],
+		))
+		->add('notices', TextareaType::class, array(
+			'label' => $this->labels[$lang]['notices'],
+		))
+		->add('password', TextType::class, array(
+			'label' => $this->labels[$lang]['password'],
+		))
 		->getForm();
 
 		
@@ -214,7 +267,7 @@ class WeddingController extends Controller
 
 			if ($form->isSubmitted() && $form->isValid()) {
 				$data = $form->getData();
-				echo "t11";
+				echo "t112";
 				echo "<pre>";
 				print_r($data);
 				exit;
