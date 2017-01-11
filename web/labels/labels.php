@@ -61,7 +61,7 @@ return array(
 			Meille on tärkeää, että myös vieraillamme on hääpäivänämme hauskaa. Hauskuutta ja päivän sujuvuutta 
 			edistämään olemme keränneet sivuille myös muuta hyödyllistä tietoa päivän ohjelmaa koskien. Osa tiedoista tarkentuu vielä 
 			lähempänä ajankohtaa, joten pysy kuulolla! Mikäli jotain tarvitsemaasi puuttuu tai haluat muuten vaan jutella, niin otahan rohkeasti yhteyttä.',
-		'thankyouforregistration' => 'Kiitos ilmottautumisestasi!',	
+		'thankyouforregistration' => 'Kiitos ilmoittautumisestasi!',	
 		'yes' => 'Kyllä'
 		
 	]

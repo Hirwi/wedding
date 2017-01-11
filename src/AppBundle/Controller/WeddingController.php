@@ -261,8 +261,6 @@ class WeddingController extends Controller
 		$lang = !empty($lang) ? $lang : 'fi';
 		$this->labels = include('labels/labels.php');
 		
-		$name = $data['name'];
-		
 		
 		$message = \Swift_Message::newInstance()
 		->setSubject($this->labels[$lang]['registrationmailtitle'])
@@ -273,7 +271,6 @@ class WeddingController extends Controller
 					// app/Resources/views/Emails/registration.html.twig
 					'Emails/registration.html.twig',
 					array(
-						'name' => $name,
 						'data' => $data
 					)
 				),
