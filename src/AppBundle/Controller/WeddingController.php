@@ -263,7 +263,7 @@ class WeddingController extends Controller
 		
 		
 		$message = \Swift_Message::newInstance()
-		->setSubject($this->labels[$lang]['registrationmailtitle'])
+		->setSubject('Hääilmoittautuminen')
 		->setFrom('info@derfinne.ch')
 		->setTo('ari.ikalainen@hotmail.com')
 		->setBody(
