@@ -265,7 +265,8 @@ class WeddingController extends Controller
 		$message = \Swift_Message::newInstance()
 		->setSubject('Hääilmoittautuminen')
 		->setFrom('info@derfinne.ch')
-		->setTo('ari.ikalainen@hotmail.com, ari.ikalainen@hotmail.com')
+		->setTo('ari.ikalainen@hotmail.com')
+		->setTo('ari.ikalainen@hotmail.com')
 		->setBody(
 				$this->renderView(
 					// app/Resources/views/Emails/registration.html.twig
