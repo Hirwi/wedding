@@ -157,11 +157,13 @@ class WeddingController extends Controller
 			'action' => '/wedding/registrate',
 			'method' => 'POST',
 		))
-		->add($this->labels[$lang]['isattending'], ChoiceType::class, array(
+		->add('isattending', ChoiceType::class, array(
 			'choices'  => array(
 				$this->labels[$lang]['no'] => 2,
 				$this->labels[$lang]['yes'] => 1,
 			),
+			'required' => false,
+			'label' => $this->labels[$lang]['isattending']
 		))
 		->add('name', TextType::class, array(
 			'label' => $this->labels[$lang]['name'],
@@ -205,11 +207,13 @@ class WeddingController extends Controller
 			'action' => '/wedding/registrate',
 			'method' => 'POST',
 		))
-		->add($this->labels[$lang]['isattending'], ChoiceType::class, array(
+		->add('isattending', ChoiceType::class, array(
 			'choices'  => array(
 				$this->labels[$lang]['no'] => 2,
 				$this->labels[$lang]['yes'] => 1,
 			),
+			'required' => false,
+			'label' => $this->labels[$lang]['isattending']
 		))
 		->add('name', TextType::class, array(
 			'label' => $this->labels[$lang]['name'],
@@ -259,6 +263,7 @@ class WeddingController extends Controller
 		
 		$name = $data['name'];
 		
+		
 		$message = \Swift_Message::newInstance()
 		->setSubject($this->labels[$lang]['registrationmailtitle'])
 		->setFrom('info@derfinne.ch')
@@ -267,7 +272,10 @@ class WeddingController extends Controller
 				$this->renderView(
 					// app/Resources/views/Emails/registration.html.twig
 					'Emails/registration.html.twig',
-					array('name' => $name)
+					array(
+						'name' => $name,
+						'data' => $data
+					)
 				),
 				'text/html');
 
