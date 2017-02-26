@@ -1,5 +1,4 @@
 ﻿<?php
-
 return array(
 	'de' => [
 		'accommodationsite' => 'Unterkunft',
@@ -15,7 +14,7 @@ return array(
 		'musicwishes' => 'Liedwünsche',
 		'name' => 'Name / Namen',
 		'no' => 'Nein',
-		'notices' => 'Bemerkungen',
+		'notices' => 'Bemerkungen / Letzte Hinweise',
 		'password' => 'Passwort',
 		'rentableaccommodations' => 'Wohnungen zum Mieten',
 		'registrationmailtitle' => 'Anmeldungsbestätigung',
@@ -24,10 +23,10 @@ return array(
 		'startsitetext1' => 'Mahtavaa, että olet löytänyt tiesi pienimuotoisille hääsivuillemme. Sivuiltamme löydät ilmoittautumislomakkeen, jonka 
 			avulla voit helposti ilmoittaa osallistumisesi, allergiasi ja tietysti musiikkitoiveesi. Toivomme, että ilmoitat myös
 			mikäli et pääse tulemaan - näin helpotat järjestelyjämme.<br><br>
-
 			Meille on tärkeää, että myös vieraillamme on hääpäivänämme hauskaa. Hauskuutta ja päivän sujuvuutta 
 			edistämään olemme keränneet sivuille myös muuta hyödyllistä tietoa päivän ohjelmaa koskien. Osa tiedoista tarkentuu vielä 
 			lähempänä ajankohtaa, joten pysy kuulolla! Mikäli jotain tarvitsemaasi puuttuu tai haluat muuten vaan jutella, niin otahan rohkeasti yhteyttä.',
+		'send' => 'Senden',
 		'thankyouforregistration' => 'Vielen Dank für Ihre Anmeldung!',	
 		'yes' => 'Ja'
 		
@@ -48,7 +47,7 @@ return array(
 		'musicwishes' => 'Biisitoiveet',
 		'name' => 'Nimi / Nimet',
 		'no' => 'Ei',
-		'notices' => 'Huomiot',
+		'notices' => 'Huomiot / Viime hetken vinkit',
 		'password' => 'Salasana',
 		'rentableaccommodations' => 'Wohnungen zum Mieten',
 		'registrationmailtitle' => 'Ilmoittautumisvahvistus',
@@ -57,10 +56,10 @@ return array(
 		'startsitetext1' => 'Mahtavaa, että olet löytänyt tiesi pienimuotoisille hääsivuillemme. Sivuiltamme löydät ilmoittautumislomakkeen, jonka 
 			avulla voit helposti ilmoittaa osallistumisesi, allergiasi ja tietysti musiikkitoiveesi. Toivomme, että ilmoitat myös
 			mikäli et pääse tulemaan - näin helpotat järjestelyjämme.<br><br>
-
 			Meille on tärkeää, että myös vieraillamme on hääpäivänämme hauskaa. Hauskuutta ja päivän sujuvuutta 
 			edistämään olemme keränneet sivuille myös muuta hyödyllistä tietoa päivän ohjelmaa koskien. Osa tiedoista tarkentuu vielä 
 			lähempänä ajankohtaa, joten pysy kuulolla! Mikäli jotain tarvitsemaasi puuttuu tai haluat muuten vaan jutella, niin otahan rohkeasti yhteyttä.',
+		'send' => 'Lähetä',
 		'thankyouforregistration' => 'Kiitos ilmoittautumisestasi!',	
 		'yes' => 'Kyllä'
 		

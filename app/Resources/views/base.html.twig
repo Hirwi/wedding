@@ -10,7 +10,9 @@
     <meta name="description" content="Wedding Satu&Ari Häät Ari&Satu Wedding Hochzeit Oulu"> 
 	<meta name="keywords" content="Wedding Satu&Ari Häät Ari&Satu Wedding Hochzeit Oulu" />
 	<meta name="abstract" content="Wedding Satu&Ari Häät Ari&Satu Wedding Hochzeit Oulu" />
-    <meta name="author" content="Ari Ikäläinen">
+    <meta name="author" content="Ari I">
+	<meta name="robots" content="noindex">
+	<meta name="googlebot" content="noindex">
 
     <title>{% block title %}Wedding Ari & Satu{% endblock %}</title>
 
@@ -85,43 +87,9 @@
     </nav>
 
     <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-			<li data-target="#myCarousel" data-slide-to="2"></li>
-			<li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="fill" style="background-image:url('/img/pic1.jpg');"></div>
-				<!--<div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>-->
-				<div class="carousel-caption">
-                    <h3><i>"It wasn’t love at first sight. It took a full five minutes."</i></h3>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('/img/pic2.jpg');"></div>
-                <div class="carousel-caption">
-                    <h3><i>"Whatever our souls are made of, his and mine are the same."</i></h3>
-                </div>
-            </div>
-			<div class="item">
-				<div class="fill" style="background-image:url('/img/pic3.jpg');"></div>
-				<div class="carousel-caption">
-                    <h3><i>"True love stories never have endings."</i></h3>
-                </div>
-            </div>
-			<div class="item">
-				<div class="fill" style="background-image:url('/img/pic4.jpg');"></div>
-				<div class="carousel-caption">
-                    <h3><i>"True love stories never have endings."</i></h3>
-                </div>
-            </div>
-        </div>
+    <header style="height:auto;">
+		<img src="/img/pic1.jpg" style="width:100%; height:auto;">
+        
 	</header>	
 		
     <!-- Page Content -->
@@ -267,12 +235,14 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="/js/bootstrap.min.js"></script>
+	
+	<script src="/js/custom.js"></script>
 
     <!-- Script to Activate the Carousel -->
 	<script>
-    $('.carousel').carousel({
-        interval: 10000 //changes the speed
-    })
+    //$('.carousel').carousel({
+      //  interval: 10000 //changes the speed
+    //})
     </script>
 
 </body>

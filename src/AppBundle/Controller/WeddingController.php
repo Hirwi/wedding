@@ -238,9 +238,14 @@ class WeddingController extends Controller
 
 			if ($form->isSubmitted() && $form->isValid()) {
 				$data = $form->getData();
-				if($data['password'] === 'arisatu'){
+				if($data['password'] === 'arisatu2017'){
 					$this->sendRegistrationMail($data, $request);
 					return $this->redirectToRoute('registrationcompleted');
+				}else{
+					echo "Password not correct!<br><br>";
+					echo '<a href="/wedding/registration">Back</a>';
+					exit;
+					return $this->redirectToRoute('registration');
 				}
 			}
 		}
