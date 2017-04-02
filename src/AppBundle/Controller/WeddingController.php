@@ -29,6 +29,22 @@ class WeddingController extends Controller
 	}
 	
 	
+	/**
+     * @Route("/wedding/comingsoon", name="comingsoon")
+     */
+    public function comingsoonAction(Request $request)
+    {
+		$session = $request->getSession();
+		$lang = $session->get('contentlanguage');
+		$lang = !empty($lang) ? $lang : 'fi';
+		$this->labels = include('labels/labels.php');
+			
+        return $this->render('wedding/comingsoon.html.twig', array(
+            'labels' => $this->labels[$lang],
+        ));
+    }
+	
+	
     /**
      * @Route("/wedding/start", name="start")
      */
@@ -238,7 +254,7 @@ class WeddingController extends Controller
 
 			if ($form->isSubmitted() && $form->isValid()) {
 				$data = $form->getData();
-				if($data['password'] === 'arisatu2017'){
+				if($data['password'] === 'satuari2017'){
 					$this->sendRegistrationMail($data, $request);
 					return $this->redirectToRoute('registrationcompleted');
 				}else{

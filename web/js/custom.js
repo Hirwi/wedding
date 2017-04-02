@@ -22,7 +22,7 @@ $( document ).ready(function() {
 			error++;
 		}
 		
-		if(error === 0 && $('#form_password').val() === 'arisatu2017'){
+		if(error === 0 && $('#form_password').val() === 'satuari2017'){
 			$('#submitregistration').attr('disabled', false);
 		}else{
 			$('#submitregistration').attr('disabled', true);

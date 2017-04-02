@@ -1,12 +1,19 @@
 ﻿<?php
 return array(
 	'de' => [
+		'accommodationinfotext' => 'Muutamia majoitusvaihtoehtoja yöpaikkaa tarvitseville:',
 		'accommodationsite' => 'Unterkunft',
 		'allergies' => 'Allergien',
 		'arrivingsite'	=> 'Anreise',
 		'contactsite'	=> 'Kontakt',
 		'giftssite' => 'Geschenke',
-		'giftstext1' => 'Geschenke...',
+		'giftstext1' => 'Meille on tärkeintä, että pääsette osallistumaan tärkeän päivämme juhlintaan.<br><br>
+		Mikäli haluatte meitä kuitenkin muistaa, tavaran sijaan toivomme että
+		voisitte osallistua häämatkakassamme kartuttamiseen. Helpoiten tämä
+		onnistuu suoraan häämatkatilillemme<br><br>
+		CH12 8140 1000 0098 0322 5 (Ari Ikäläinen)
+		tai sujauttamalla lahja kirjekuoressa korttilaatikkoon juhlapaikalla.<br><br>
+		Kiitos, että tuette unelmien matkamme toteutumista <3',
 		'heartlywelcome' => 'Lämpimästi tervetuloa! Herzlich willkommen!',
 		'hotels'		=> 'Hotellen',
 		'isattending' => 'Teilnahme',
@@ -15,17 +22,42 @@ return array(
 		'name' => 'Name / Namen',
 		'no' => 'Nein',
 		'notices' => 'Bemerkungen / Letzte Hinweise',
-		'password' => 'Passwort',
+		'oulunjazzvinttiinfotext' => 'Jatkamme juhlintaa Jazzvintillä Oulun Toppilassa, Kauppaseurantiellä.
+		Jazzvintti sijaitsee ihan Toppilan lämpövoimalan vieressä ja vain 0,0
+		km Tuomiokirkolta. Paikalla on parkkipaikkoja rajoitetusti, joten
+		suosittelemme käyttämään kimppakyytejä, taksia tai bussia.
+		Bussipysäkit sijaitsevat ihan muutaman minuutin kävelymatkan päässä.<br><br>
+		Otattehan huomioon, että pihapiirissä on myös toinen juhlatila
+		(keltainen rakennus). Meidän juhlapaikkamme (punainen rakennus) on
+		selkeästi merkitty ja helposti tunnistettavissa.',
+		'ouluntuomiokirkkoinfotext' => 'Vihkimisemme tapahtuu Oulun Tuomiokirkossa, joka sijaitsee helposti
+		löydettävällä paikalla ihan Oulun keskustassa. Kirkon edessä on vain
+		muutamia parkkipaikkoja, ja suurin osa näistä lauantaipäivänä
+		todennäköisesti varattuja. Maksullisia parkkipaikkoja löytyy kuitenkin
+		keskustasta kävelymatkan päästä, ja myös bussilla tai taksilla pääsee
+		ihan kirkon viereen.<br><br>
+		Pyydämme olemaan paikalla hieman ennen yhtä, toimitus alkaa tasan klo 13.',
+		'password' => 'Passwort (Bitte schreiben Sie folgender Text in den Feld: satuari2017)',
 		'rentableaccommodations' => 'Wohnungen zum Mieten',
 		'registrationmailtitle' => 'Anmeldungsbestätigung',
 		'registrationsite' => 'Anmeldung',
 		'startsite' => 'Startseite',
-		'startsitetext1' => 'Mahtavaa, että olet löytänyt tiesi pienimuotoisille hääsivuillemme. Sivuiltamme löydät ilmoittautumislomakkeen, jonka 
-			avulla voit helposti ilmoittaa osallistumisesi, allergiasi ja tietysti musiikkitoiveesi. Toivomme, että ilmoitat myös
-			mikäli et pääse tulemaan - näin helpotat järjestelyjämme.<br><br>
-			Meille on tärkeää, että myös vieraillamme on hääpäivänämme hauskaa. Hauskuutta ja päivän sujuvuutta 
-			edistämään olemme keränneet sivuille myös muuta hyödyllistä tietoa päivän ohjelmaa koskien. Osa tiedoista tarkentuu vielä 
-			lähempänä ajankohtaa, joten pysy kuulolla! Mikäli jotain tarvitsemaasi puuttuu tai haluat muuten vaan jutella, niin otahan rohkeasti yhteyttä.',
+		'startsitetext1' => 'Arvoisa häävieras,<br><br>
+		lämpimästi tervetuloa hääsivuillemme! Toivomme, että käytätte sivuilta
+		löytyvää ilmoittautumislomaketta juhlaamme osallistumisen
+		vahvistamiseksi, tai tilanteen vaatiessa myös poissaolon
+		ilmoittamiseksi. Halukkaat voivat myös samalla esittää
+		musiikkitoiveensa illan juhlaan. Kiitämme jo etukäteen järjestelyjemme
+		helpottamisesta!<br><br>
+		Olemme koonneet yhteen myös muuta häitämme koskevaa tietoa, joka
+		toivottavasti auttaa tekemään päivästä kaikille osapuolille
+		mahdollisimman miellyttävän. Lähempänä juhlaa päivitämme sivuille myös
+		alustavaa suunnitelmaa päivän tarkemmasta aikataulusta.<br><br>
+		Kysymyksiä? Meihin saa mielellään ottaa yhteyttä sähköpostilla tai
+		tarvittaessa vaikka puhelimitse. Tarvittavat yhteystiedot myös
+		bestmaneille ja kaasoille löytyvät yhteystiedot -välilehdeltä.<br><br>
+		Kivaa selailua ja nähdään juhlissa!',
+		'startsitetext2' => 'Lämpimästi tervetuloa! Herzlich willkommen!',
 		'send' => 'Senden',
 		'thankyouforregistration' => 'Vielen Dank für Ihre Anmeldung!',	
 		'yes' => 'Ja'
@@ -34,12 +66,19 @@ return array(
 	
 	
 	'fi' => [
+		'accommodationinfotext' => 'Muutamia majoitusvaihtoehtoja yöpaikkaa tarvitseville:',
 		'accommodationsite' => 'Majoitus',
 		'allergies' => 'Allergiat',
 		'arrivingsite'	=> 'Saapuminen',
 		'contactsite'	=> 'Yhteystiedot',
-		'giftssite' => 'Lahjat',
-		'giftstext1' => 'Lahjat...',
+		'giftssite' => 'Lahjatoiveet',
+		'giftstext1' => 'Meille on tärkeintä, että pääsette osallistumaan tärkeän päivämme juhlintaan.<br><br>
+		Mikäli haluatte meitä kuitenkin muistaa, tavaran sijaan toivomme että
+		voisitte osallistua häämatkakassamme kartuttamiseen. Helpoiten tämä
+		onnistuu suoraan häämatkatilillemme<br><br>
+		FI72 5317 2050 0008 95 (Ari Ikäläinen)
+		tai sujauttamalla lahja kirjekuoressa korttilaatikkoon juhlapaikalla.<br><br>
+		Kiitos, että tuette unelmien matkamme toteutumista <3',
 		'heartlywelcome' => 'Lämpimästi tervetuloa! Herzlich willkommen!',
 		'hotels'				=> 'Hotellit',
 		'isattending' => 'Osallistun',
@@ -48,17 +87,41 @@ return array(
 		'name' => 'Nimi / Nimet',
 		'no' => 'Ei',
 		'notices' => 'Huomiot / Viime hetken vinkit',
-		'password' => 'Salasana',
-		'rentableaccommodations' => 'Wohnungen zum Mieten',
+		'oulunjazzvinttiinfotext' => 'Jatkamme juhlintaa Jazzvintillä Oulun Toppilassa, Kauppaseurantiellä.
+		Jazzvintti sijaitsee ihan Toppilan lämpövoimalan vieressä ja noin 5km Tuomiokirkolta. Paikalla on parkkipaikkoja rajoitetusti, joten
+		suosittelemme käyttämään kimppakyytejä, taksia tai bussia.
+		Bussipysäkit sijaitsevat ihan muutaman minuutin kävelymatkan päässä.<br><br>
+		Otattehan huomioon, että pihapiirissä on myös toinen juhlatila
+		(keltainen rakennus). Meidän juhlapaikkamme (punainen rakennus) on
+		selkeästi merkitty ja helposti tunnistettavissa.',
+		'ouluntuomiokirkkoinfotext' => 'Vihkimisemme tapahtuu Oulun Tuomiokirkossa, joka sijaitsee helposti
+		löydettävällä paikalla ihan Oulun keskustassa. Kirkon edessä on vain
+		muutamia parkkipaikkoja, ja suurin osa näistä lauantaipäivänä
+		todennäköisesti varattuja. Maksullisia parkkipaikkoja löytyy kuitenkin
+		keskustasta kävelymatkan päästä, ja myös bussilla tai taksilla pääsee
+		ihan kirkon viereen.<br><br>
+		Pyydämme olemaan paikalla hieman ennen yhtä, toimitus alkaa tasan klo 13.',
+		'password' => 'Salasana (Kirjoita kenttään seuraava teksti: satuari2017)',
+		'rentableaccommodations' => 'Vuokrattavia huoneistoja',
 		'registrationmailtitle' => 'Ilmoittautumisvahvistus',
 		'registrationsite' => 'Ilmoittautuminen',
 		'startsite'	=> 'Etusivu',
-		'startsitetext1' => 'Mahtavaa, että olet löytänyt tiesi pienimuotoisille hääsivuillemme. Sivuiltamme löydät ilmoittautumislomakkeen, jonka 
-			avulla voit helposti ilmoittaa osallistumisesi, allergiasi ja tietysti musiikkitoiveesi. Toivomme, että ilmoitat myös
-			mikäli et pääse tulemaan - näin helpotat järjestelyjämme.<br><br>
-			Meille on tärkeää, että myös vieraillamme on hääpäivänämme hauskaa. Hauskuutta ja päivän sujuvuutta 
-			edistämään olemme keränneet sivuille myös muuta hyödyllistä tietoa päivän ohjelmaa koskien. Osa tiedoista tarkentuu vielä 
-			lähempänä ajankohtaa, joten pysy kuulolla! Mikäli jotain tarvitsemaasi puuttuu tai haluat muuten vaan jutella, niin otahan rohkeasti yhteyttä.',
+		'startsitetext1' => 'Arvoisa häävieras,<br><br>
+		lämpimästi tervetuloa hääsivuillemme! Toivomme, että käytätte sivuilta
+		löytyvää ilmoittautumislomaketta juhlaamme osallistumisen
+		vahvistamiseksi, tai tilanteen vaatiessa myös poissaolon
+		ilmoittamiseksi. Halukkaat voivat myös samalla esittää
+		musiikkitoiveensa illan juhlaan. Kiitämme jo etukäteen järjestelyjemme
+		helpottamisesta!<br><br>
+		Olemme koonneet yhteen myös muuta häitämme koskevaa tietoa, joka
+		toivottavasti auttaa tekemään päivästä kaikille osapuolille
+		mahdollisimman miellyttävän. Lähempänä juhlaa päivitämme sivuille myös
+		alustavaa suunnitelmaa päivän tarkemmasta aikataulusta.<br><br>
+		Kysymyksiä? Meihin saa mielellään ottaa yhteyttä sähköpostilla tai
+		tarvittaessa vaikka puhelimitse. Tarvittavat yhteystiedot myös
+		bestmaneille ja kaasoille löytyvät yhteystiedot -välilehdeltä.<br><br>
+		Kivaa selailua ja nähdään juhlissa!',
+		'startsitetext2' => 'Lämpimästi tervetuloa! Herzlich willkommen!',
 		'send' => 'Lähetä',
 		'thankyouforregistration' => 'Kiitos ilmoittautumisestasi!',	
 		'yes' => 'Kyllä'

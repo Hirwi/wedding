@@ -1,0 +1,6 @@
+$ip = $_SERVER["REMOTE_ADDR"];
+
+if($ip !== '194.230.155.149'){
+        echo "hello world";
+        exit;
+}
