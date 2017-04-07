@@ -1,0 +1,19 @@
+To: satuylit@gmail.com, ari.ikalainen@hotmail.com
+Subject: =?utf-8?Q?H=C3=A4=C3=A4ilmoittautuminen?=
+Message-ID: <e40ad1948a1e7e5bbf484fd7e3077c23@127.0.0.1>
+Date: Fri, 07 Apr 2017 21:59:46 +0200
+From: info@derfinne.ch
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<h3>H=C3=A4=C3=A4ilmoittautuminen</h3>
+
+Osallistuu: 1<br>
+Nimi / Nime=
+t: test1<br>
+Allergiat: test3<br>
+Biisitoiveet: test4<br>
+Huomiot: te=
+st5<br>
+Salasana: satuari2017

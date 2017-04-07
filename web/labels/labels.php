@@ -59,6 +59,7 @@ return array(
 		Kivaa selailua ja nähdään juhlissa!',
 		'startsitetext2' => 'Lämpimästi tervetuloa! Herzlich willkommen!',
 		'send' => 'Senden',
+		'taxishuttle' => 'Wird Taxifahrt von der Kirche nach Festplatz benötigt? (Für wieviele Personen?)',
 		'thankyouforregistration' => 'Vielen Dank für Ihre Anmeldung!',	
 		'yes' => 'Ja'
 		
@@ -123,6 +124,7 @@ return array(
 		Kivaa selailua ja nähdään juhlissa!',
 		'startsitetext2' => 'Lämpimästi tervetuloa! Herzlich willkommen!',
 		'send' => 'Lähetä',
+		'taxishuttle' => 'Onko tarvetta taksikyydille kirkolta juhlapaikalle? (Für wieviele Personen?)',
 		'thankyouforregistration' => 'Kiitos ilmoittautumisestasi!',	
 		'yes' => 'Kyllä'
 		

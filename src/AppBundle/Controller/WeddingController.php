@@ -169,6 +169,40 @@ class WeddingController extends Controller
 		$lang = !empty($lang) ? $lang : 'fi';
 		$this->labels = include('labels/labels.php');
 	
+	
+	if($lang === 'de'){
+		$form = $formFactory->createBuilder(FormType::class, null, array(
+			'action' => '/wedding/registrate',
+			'method' => 'POST',
+		))
+		->add('isattending', ChoiceType::class, array(
+			'choices'  => array(
+				$this->labels[$lang]['no'] => 2,
+				$this->labels[$lang]['yes'] => 1,
+			),
+			'required' => false,
+			'label' => $this->labels[$lang]['isattending']
+		))
+		->add('name', TextType::class, array(
+			'label' => $this->labels[$lang]['name'],
+		))
+		->add('taxi', TextType::class, array(
+			'label' => $this->labels[$lang]['taxishuttle'],
+		))
+		->add('allergies', TextareaType::class, array(
+			'label' => $this->labels[$lang]['allergies'],
+		))
+		->add('musicwishes', TextareaType::class, array(
+			'label' => $this->labels[$lang]['musicwishes'],
+		))
+		->add('notices', TextareaType::class, array(
+			'label' => $this->labels[$lang]['notices'],
+		))
+		->add('password', TextType::class, array(
+			'label' => $this->labels[$lang]['password'],
+		))
+		->getForm();
+	}else{
 		$form = $formFactory->createBuilder(FormType::class, null, array(
 			'action' => '/wedding/registrate',
 			'method' => 'POST',
@@ -197,8 +231,8 @@ class WeddingController extends Controller
 			'label' => $this->labels[$lang]['password'],
 		))
 		->getForm();
-
-		
+	}
+	
 		
         return $this->render('wedding/registration.html.twig', array(
             'labels' => $this->labels[$lang],
@@ -219,34 +253,68 @@ class WeddingController extends Controller
 		$lang = !empty($lang) ? $lang : 'fi';
 		$this->labels = include('labels/labels.php');
 		
-		$form = $formFactory->createBuilder(FormType::class, null, array(
+		if($lang === 'de'){
+			$form = $formFactory->createBuilder(FormType::class, null, array(
 			'action' => '/wedding/registrate',
 			'method' => 'POST',
-		))
-		->add('isattending', ChoiceType::class, array(
-			'choices'  => array(
-				$this->labels[$lang]['no'] => 2,
-				$this->labels[$lang]['yes'] => 1,
-			),
-			'required' => false,
-			'label' => $this->labels[$lang]['isattending']
-		))
-		->add('name', TextType::class, array(
-			'label' => $this->labels[$lang]['name'],
-		))
-		->add('allergies', TextareaType::class, array(
-			'label' => $this->labels[$lang]['allergies'],
-		))
-		->add('musicwishes', TextareaType::class, array(
-			'label' => $this->labels[$lang]['musicwishes'],
-		))
-		->add('notices', TextareaType::class, array(
-			'label' => $this->labels[$lang]['notices'],
-		))
-		->add('password', TextType::class, array(
-			'label' => $this->labels[$lang]['password'],
-		))
-		->getForm();
+			))
+			->add('isattending', ChoiceType::class, array(
+				'choices'  => array(
+					$this->labels[$lang]['no'] => 2,
+					$this->labels[$lang]['yes'] => 1,
+				),
+				'required' => false,
+				'label' => $this->labels[$lang]['isattending']
+			))
+			->add('name', TextType::class, array(
+				'label' => $this->labels[$lang]['name'],
+			))
+			->add('taxi', TextType::class, array(
+			'label' => $this->labels[$lang]['taxishuttle'],
+			))
+			->add('allergies', TextareaType::class, array(
+				'label' => $this->labels[$lang]['allergies'],
+			))
+			->add('musicwishes', TextareaType::class, array(
+				'label' => $this->labels[$lang]['musicwishes'],
+			))
+			->add('notices', TextareaType::class, array(
+				'label' => $this->labels[$lang]['notices'],
+			))
+			->add('password', TextType::class, array(
+				'label' => $this->labels[$lang]['password'],
+			))
+			->getForm();
+		}else{
+			$form = $formFactory->createBuilder(FormType::class, null, array(
+				'action' => '/wedding/registrate',
+				'method' => 'POST',
+			))
+			->add('isattending', ChoiceType::class, array(
+				'choices'  => array(
+					$this->labels[$lang]['no'] => 2,
+					$this->labels[$lang]['yes'] => 1,
+				),
+				'required' => false,
+				'label' => $this->labels[$lang]['isattending']
+			))
+			->add('name', TextType::class, array(
+				'label' => $this->labels[$lang]['name'],
+			))
+			->add('allergies', TextareaType::class, array(
+				'label' => $this->labels[$lang]['allergies'],
+			))
+			->add('musicwishes', TextareaType::class, array(
+				'label' => $this->labels[$lang]['musicwishes'],
+			))
+			->add('notices', TextareaType::class, array(
+				'label' => $this->labels[$lang]['notices'],
+			))
+			->add('password', TextType::class, array(
+				'label' => $this->labels[$lang]['password'],
+			))
+			->getForm();
+		}	
 
 		
 		if ($request->isMethod('POST')) {
@@ -282,6 +350,30 @@ class WeddingController extends Controller
 		$lang = !empty($lang) ? $lang : 'fi';
 		$this->labels = include('labels/labels.php');
 		
+		$isattending = (int)$data['isattending'] === 1 ? "Kyllä" : "Ei";
+		$name = (string)$data['name'];
+		$allergies = (string)$data['allergies'];
+		$musicwishes = (string)$data['musicwishes'];
+		$notices = (string)$data['notices'];
+		$password = (string)$data['password'];
+		$taxishuttle = isset($data['taxishuttle']) ? $data['taxishuttle'] : 'NONE';
+		
+		$strLine = '';
+		$strLine .= $isattending.'|';
+		$strLine .= $name.'|';
+		$strLine .= $allergies.'|';
+		$strLine .= $musicwishes.'|';
+		$strLine .= $notices.'|';
+		$strLine .= $password.'|';
+		if($taxishuttle !== 'NONE'){
+			$strLine .= $taxishuttle.'|';
+		}
+		
+		$myfile = fopen("ilmoittautumiset.txt", "a") or die("Error. Registration failed!");
+		$txt = $strLine;
+		
+		fwrite($myfile, "\n". $txt);
+		fclose($myfile);
 		
 		$message = \Swift_Message::newInstance()
 		->setSubject('Hääilmoittautuminen')

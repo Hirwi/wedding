@@ -6,6 +6,7 @@ use Symfony\Component\Debug\Debug;
 $ip = $_SERVER['REMOTE_ADDR'];
 $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
+/*
 if($ip == '127.0.0.1'){
 	if (strpos($actual_link, 'comingsoon') !== false) {
 		//
@@ -14,6 +15,7 @@ if($ip == '127.0.0.1'){
 		exit;
 	}
 }
+*/
 
 
 // If you don't want to setup permissions the proper way, just uncomment the following PHP line
