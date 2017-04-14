@@ -61,7 +61,7 @@ return array(
 		tarvittaessa vaikka puhelimitse. Tarvittavat yhteystiedot myös
 		bestmaneille ja kaasoille löytyvät yhteystiedot -välilehdeltä.<br><br>
 		Kivaa selailua ja nähdään juhlissa!',
-		'startsitetext2' => 'Lämpimästi tervetuloa! Herzlich willkommen!',
+		'startsitetext2' => 'Satu & Ari 05.08.2017',
 		'send' => 'Senden',
 		'taxishuttle' => 'Wird Taxifahrt von der Kirche nach Festplatz benötigt? (Für wieviele Personen?)',
 		'thankyouforregistration' => 'Vielen Dank für Ihre Anmeldung!',	

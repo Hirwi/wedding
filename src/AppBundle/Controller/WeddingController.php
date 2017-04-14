@@ -204,18 +204,23 @@ class WeddingController extends Controller
 			'label' => $this->labels[$lang]['name'],
 		))
 		->add('taxi', TextType::class, array(
+			'required' => false,
 			'label' => $this->labels[$lang]['taxishuttle'],
 		))
 		->add('allergies', TextareaType::class, array(
+			'required' => false,
 			'label' => $this->labels[$lang]['allergies'],
 		))
 		->add('musicwishes', TextareaType::class, array(
+			'required' => false,
 			'label' => $this->labels[$lang]['musicwishes'],
 		))
 		->add('notices', TextareaType::class, array(
+			'required' => false,
 			'label' => $this->labels[$lang]['notices'],
 		))
 		->add('password', TextType::class, array(
+			'required' => true,
 			'label' => $this->labels[$lang]['password'],
 		))
 		->getForm();
@@ -236,12 +241,15 @@ class WeddingController extends Controller
 			'label' => $this->labels[$lang]['name'],
 		))
 		->add('allergies', TextareaType::class, array(
+			'required' => false,
 			'label' => $this->labels[$lang]['allergies'],
 		))
 		->add('musicwishes', TextareaType::class, array(
+			'required' => false,
 			'label' => $this->labels[$lang]['musicwishes'],
 		))
 		->add('notices', TextareaType::class, array(
+			'required' => false,
 			'label' => $this->labels[$lang]['notices'],
 		))
 		->add('password', TextType::class, array(
