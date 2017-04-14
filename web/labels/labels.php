@@ -115,7 +115,7 @@ return array(
 		'registrationmailtitle' => 'Ilmoittautumisvahvistus',
 		'registrationsite' => 'Ilmoittautuminen',
 		'startsite'	=> 'Etusivu',
-		'startsitetext1' => '<span class="lobsterfont">Arvoisa häävieras,</span><br><br>
+		'startsitetext1' => '<span class="lobsterfont onefourem">Arvoisa häävieras,</span><br><br>
 		lämpimästi tervetuloa hääsivuillemme! Toivomme, että käytätte sivuilta
 		löytyvää ilmoittautumislomaketta juhlaamme osallistumisen
 		vahvistamiseksi, tai tilanteen vaatiessa myös poissaolon
@@ -127,8 +127,7 @@ return array(
 		mahdollisimman miellyttävän. Lähempänä juhlaa päivitämme sivuille myös
 		alustavaa suunnitelmaa päivän tarkemmasta aikataulusta.<br><br>
 		Kysymyksiä? Meihin saa mielellään ottaa yhteyttä sähköpostilla tai
-		tarvittaessa vaikka puhelimitse. Tarvittavat yhteystiedot myös
-		bestmaneille ja kaasoille löytyvät yhteystiedot -välilehdeltä.<br><br>
+		tarvittaessa vaikka puhelimitse. Tarvittavat tiedot löytyvät yhteystiedot -välilehdeltä.<br><br>
 		Kivaa selailua ja nähdään juhlissa!',
 		'startsitetext2' => 'Satu & Ari 05.08.2017',
 		'send' => 'Lähetä',
