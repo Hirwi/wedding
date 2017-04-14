@@ -83,7 +83,7 @@ return array(
 		onnistuu suoraan häämatkatilillemme<br><br>
 		FI72 5317 2050 0008 95 (Ari Ikäläinen)<br>
 		tai sujauttamalla lahja kirjekuoressa korttilaatikkoon juhlapaikalla.<br><br>
-		Kiitos, että tuette unelmien matkamme toteutumista',
+		Kiitos, että tuette unelmien matkamme toteutumista!',
 		'heartlywelcome' => 'Satu & Ari 05.08.2017',
 		'hotels'				=> 'Hotellit',
 		'isattending' => 'Osallistun',
@@ -115,7 +115,7 @@ return array(
 		'registrationmailtitle' => 'Ilmoittautumisvahvistus',
 		'registrationsite' => 'Ilmoittautuminen',
 		'startsite'	=> 'Etusivu',
-		'startsitetext1' => 'Arvoisa häävieras,<br><br>
+		'startsitetext1' => '<span class="lobsterfont">Arvoisa häävieras,</span><br><br>
 		lämpimästi tervetuloa hääsivuillemme! Toivomme, että käytätte sivuilta
 		löytyvää ilmoittautumislomaketta juhlaamme osallistumisen
 		vahvistamiseksi, tai tilanteen vaatiessa myös poissaolon
