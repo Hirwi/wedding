@@ -1,0 +1,23 @@
+{# app/Resources/views/wedding/gifts.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ parent() }}: {{ labels.programsite }}{% endblock %}
+
+{% block pageheader %}{{ labels.programsite }}{% endblock %}
+
+
+{% block body %}
+	<div class="col-md-12">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<p>
+					{{ labels.programtext1|raw }}
+				</p>
+								
+			</div>
+		</div>
+	</div>
+	
+	<!-- /.row -->
+{% endblock %}	
+		

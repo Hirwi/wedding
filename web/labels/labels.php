@@ -11,9 +11,9 @@ return array(
 		Mikäli haluatte meitä kuitenkin muistaa, tavaran sijaan toivomme että
 		voisitte osallistua häämatkakassamme kartuttamiseen. Helpoiten tämä
 		onnistuu suoraan häämatkatilillemme<br><br>
-		CH12 8140 1000 0098 0322 5 (Ari Ikäläinen)
-		tai sujauttamalla lahja kirjekuoressa korttilaatikkoon juhlapaikalla.<br><br>
-		Kiitos, että tuette unelmien matkamme toteutumista <3',
+		CH12 8140 1000 0098 0322 5 (Ari Ikäläinen)<br>
+		tai sujauttamalla lahjan kirjekuoressa korttilaatikkoon juhlapaikalla.<br><br>
+		Kiitos, että tuette unelmien matkamme toteutumista',
 		'heartlywelcome' => 'Lämpimästi tervetuloa! Herzlich willkommen!',
 		'hotels'		=> 'Hotellen',
 		'isattending' => 'Teilnahme',
@@ -38,7 +38,11 @@ return array(
 		ihan kirkon viereen.<br><br>
 		Pyydämme olemaan paikalla hieman ennen yhtä, toimitus alkaa tasan klo 13.',
 		'password' => 'Passwort (Bitte schreiben Sie folgender Text in den Feld: satuari2017)',
+		'phoneshort' => 'Tel.',
+		'programsite' => 'Programm',
+		'programtext1' => 'Weitere Informationen folgen',
 		'rentableaccommodations' => 'Wohnungen zum Mieten',
+		'registrationinfotext' => 'Wir bitten um Anmeldung/Abmeldung bis spätestens 30.06.2017',
 		'registrationmailtitle' => 'Anmeldungsbestätigung',
 		'registrationsite' => 'Anmeldung',
 		'startsite' => 'Startseite',
@@ -77,17 +81,17 @@ return array(
 		Mikäli haluatte meitä kuitenkin muistaa, tavaran sijaan toivomme että
 		voisitte osallistua häämatkakassamme kartuttamiseen. Helpoiten tämä
 		onnistuu suoraan häämatkatilillemme<br><br>
-		FI72 5317 2050 0008 95 (Ari Ikäläinen)
+		FI72 5317 2050 0008 95 (Ari Ikäläinen)<br>
 		tai sujauttamalla lahja kirjekuoressa korttilaatikkoon juhlapaikalla.<br><br>
-		Kiitos, että tuette unelmien matkamme toteutumista <3',
-		'heartlywelcome' => 'Lämpimästi tervetuloa! Herzlich willkommen!',
+		Kiitos, että tuette unelmien matkamme toteutumista',
+		'heartlywelcome' => 'Satu & Ari 05.08.2017',
 		'hotels'				=> 'Hotellit',
 		'isattending' => 'Osallistun',
 		'locationssite' => 'Tapahtumapaikat',
 		'musicwishes' => 'Biisitoiveet',
 		'name' => 'Nimi / Nimet',
 		'no' => 'Ei',
-		'notices' => 'Huomiot / Viime hetken vinkit',
+		'notices' => 'Muuta huomioitavaa / Viime hetken vinkit / Terveiset',
 		'oulunjazzvinttiinfotext' => 'Jatkamme juhlintaa Jazzvintillä Oulun Toppilassa, Kauppaseurantiellä.
 		Jazzvintti sijaitsee ihan Toppilan lämpövoimalan vieressä ja noin 5km Tuomiokirkolta. Paikalla on parkkipaikkoja rajoitetusti, joten
 		suosittelemme käyttämään kimppakyytejä, taksia tai bussia.
@@ -103,6 +107,10 @@ return array(
 		ihan kirkon viereen.<br><br>
 		Pyydämme olemaan paikalla hieman ennen yhtä, toimitus alkaa tasan klo 13.',
 		'password' => 'Salasana (Kirjoita kenttään seuraava teksti: satuari2017)',
+		'phoneshort' => 'Puh.',
+		'programsite' => 'Ohjelma',
+		'programtext1' => 'Tulossa',
+		'registrationinfotext' => 'Pyydämme ilmoittamaan osallistumisesta tai mahdollisesta esteestä 30.06.2017 mennessä',
 		'rentableaccommodations' => 'Vuokrattavia huoneistoja',
 		'registrationmailtitle' => 'Ilmoittautumisvahvistus',
 		'registrationsite' => 'Ilmoittautuminen',
@@ -122,7 +130,7 @@ return array(
 		tarvittaessa vaikka puhelimitse. Tarvittavat yhteystiedot myös
 		bestmaneille ja kaasoille löytyvät yhteystiedot -välilehdeltä.<br><br>
 		Kivaa selailua ja nähdään juhlissa!',
-		'startsitetext2' => 'Lämpimästi tervetuloa! Herzlich willkommen!',
+		'startsitetext2' => 'Satu & Ari 05.08.2017',
 		'send' => 'Lähetä',
 		'taxishuttle' => 'Onko tarvetta taksikyydille kirkolta juhlapaikalle? (Für wieviele Personen?)',
 		'thankyouforregistration' => 'Kiitos ilmoittautumisestasi!',	
