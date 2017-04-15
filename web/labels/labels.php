@@ -14,28 +14,28 @@ return array(
 		CH12 8140 1000 0098 0322 5 (Ari Ikäläinen)<br>
 		tai sujauttamalla lahjan kirjekuoressa korttilaatikkoon juhlapaikalla.<br><br>
 		Kiitos, että tuette unelmien matkamme toteutumista',
-		'giftstext1' => 'Eure Anwesenheit ist alles was wir uns zur Hochzeit wünschen.<br><br>
-		Wollt ihr uns dennoch etwas schenken, würden wir uns am meisten über eine kleine Spende für die Reisekasse
-		Am einfachsten geht es mit einer Überweisung auf die Konto
+		'giftstext1' => 'Eure Anwesenheit ist alles, was wir uns zur Hochzeit wünschen.<br><br>
+		Wollt ihr uns dennoch etwas schenken, so freuen wir uns am meisten über eine kleine Spende in unsere Reisekasse.
+		Am einfachsten geht es mit einer Überweisung auf das folgende Konto:
 		<br><br>
 		CH12 8140 1000 0098 0322 5 (Ari Ikäläinen)<br>
-		oder mit ein Kuvert mit etwas drin<br><br>
+		oder mit einem Kuvert.<br><br>
 		Vielen Dank im Voraus!',
 		'heartlywelcome' => 'Satu & Ari 05.08.2017',
-		'hotels'		=> 'Hotellen',
+		'hotels'		=> 'Hotels',
 		'isattending' => 'Teilnahme',
 		'locationssite' => 'Festorte',
-		'musicwishes' => 'Liedwünsche',
+		'musicwishes' => 'Musikwünsche',
 		'name' => 'Name / Namen',
 		'no' => 'Nein',
 		'notices' => 'Bemerkungen / Letzte Hinweise / Grüsse',
-		'oulunjazzvinttiinfotext' => 'Die Hochzeitsfeier findet statt in Jazzvintti, der liegt ca. 5km
-		entfernt von der Kirche (Oulun Tuomiokirkko).
-		Der Festplatz ist ein rote Gebäude und es ist erkennbar signalisiert etc......',
-		'ouluntuomiokirkkoinfotext' => 'Unsere Trauung findet in "Oulun Tuomiokirkko" statt. Die liegt im Zentrum des Oulus.
+		'oulunjazzvinttiinfotext' => 'Die Hochzeitsfeier findet in der Festlocation Jazzvintti statt, die ca. 5km
+		von der Kirche (Oulun Tuomiokirkko) entfernt ist.
+		Jazzvintti ist ein rotes Gebäude und ist erkennbar signalisiert.',
+		'ouluntuomiokirkkoinfotext' => 'Unsere Trauung findet mitten in Oulu in der Kirche Oulu (Oulun Tuomiokirkko) statt. 
 		<br><br>
-		Weil die Trauung fängt um 13.00 Uhr an bitten wir um eure Anwesenheit in der Kirche schon etwas früher',
-		'password' => 'Passwort (Bitte schreiben Sie folgender Text in den Feld: satuari2017)',
+		Da die Trauung in der Kriche um 13:00 beginnt, bitten wir euch, bereits etwas früher zu erscheinen.',
+		'password' => 'Passwort (Bitte schreibt folgenden Text in das Feld: satuari2017)',
 		'phoneshort' => 'Tel.',
 		'programsite' => 'Programm',
 		'programtext1' => 'Weitere Informationen folgen',
@@ -45,15 +45,15 @@ return array(
 		'registrationsite' => 'Anmeldung',
 		'startsite' => 'Startseite',
 		'startsitetext1' => '<span class="lobsterfont onefourem">Lieber Hochzeitsgast,</span><br><br>
-		herzlich willkommen auf unserer Hochzeitsseite. Wir bitten euch die Anmeldeformular für die Teilnahme zu benutzen.
-		Alle Musikliebhaben können auch ihre Wünsche per Anmeldeformular zu mitteilen. Vielen Dank für eure Bemühungen.<br><br>
-		Wir haben auch andere Informationen über unserer Hochzeit gesammelt. Bald werden wir auch das grobe Programm für den Tag publizieren.<br><br>
-		Fragen? Ihr könnt an uns kontakt per E-Mail oder Telefon nehmen. Die Kontaktinformationen 
-		findet ihr unter "Kontakt"-Seite<br><br>
-		Viel Spass beim lesen und hoffentlich sehen wir uns in Oulu!',
+		herzlich willkommen auf unserer Hochzeitsseite. Wir bitten um eine An- oder Abmeldung über das Teilnahmeformular.
+		Alle Musikliebhaber können uns ihre Wünsche auch im Anmeldeformular mitteilen. Vielen Dank für eure Bemühungen.<br><br>
+		Genauere Informationen findet ihr hier auf unserer Hochzeitsseite. Bald werden wir das grobe Programm für den Tag publizieren.<br><br>
+		Fragen? Ihr könnt gerne per E-Mail oder Telefon mit uns Kontakt aufnehmen. Die Kontaktinformationen 
+		findet ihr unter "Kontakt"-Seite.<br><br>
+		Viel Spass beim Lesen und hoffentlich sehen wir uns in Oulu!',
 		'startsitetext2' => 'Satu & Ari 05.08.2017',
 		'send' => 'Senden',
-		'taxishuttle' => 'Wird Taxifahrt von der Kirche nach Festplatz benötigt? (Für wieviele Personen?)',
+		'taxishuttle' => 'Benötigt ihr eine Taxifahrt von der Kirche zum Festplatz? (Für wieviele Personen?)',
 		'thankyouforregistration' => 'Vielen Dank für Ihre Anmeldung!',	
 		'yes' => 'Ja'
 	],

@@ -3,9 +3,6 @@
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Debug\Debug;
 
-$ip = $_SERVER['REMOTE_ADDR'];
-$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-
 /*
 if($ip == '127.0.0.1'){
 	if (strpos($actual_link, 'comingsoon') !== false) {
@@ -16,6 +13,14 @@ if($ip == '127.0.0.1'){
 	}
 }
 */
+
+$ip = $_SERVER['REMOTE_ADDR'];
+$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+$datetimenow = date('d.m.Y H:i:s');
+$txt = $datetimenow.'|'.$ip.'|'.$actual_link;
+$myfile = fopen("log.txt", "a") or die("Error!");
+fwrite($myfile, "\n". $txt);
+fclose($myfile);
 
 
 // If you don't want to setup permissions the proper way, just uncomment the following PHP line
