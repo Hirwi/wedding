@@ -26,7 +26,7 @@ return array(
 		'isattending' => 'Teilnahme',
 		'locationssite' => 'Festorte',
 		'musicwishes' => 'Musikwünsche',
-		'name' => 'Name / Namen',
+		'name' => 'Name / Namen (Vorname & Nachname)',
 		'no' => 'Nein',
 		'notices' => 'Bemerkungen / Letzte Hinweise / Grüsse',
 		'oulunjazzvinttiinfotext' => 'Die Hochzeitsfeier findet in der Festlocation Jazzvintti statt, die ca. 5km
@@ -78,7 +78,7 @@ return array(
 		'isattending' => 'Osallistun',
 		'locationssite' => 'Tapahtumapaikat',
 		'musicwishes' => 'Biisitoiveet',
-		'name' => 'Nimi / Nimet',
+		'name' => 'Nimi / Nimet (Etu- ja sukunimi)',
 		'no' => 'Ei',
 		'notices' => 'Muuta huomioitavaa / Viime hetken vinkit / Terveiset',
 		'oulunjazzvinttiinfotext' => 'Jatkamme juhlintaa Jazzvintillä Oulun Toppilassa, Kauppaseurantiellä.
