@@ -400,6 +400,10 @@ class WeddingController extends Controller
 		fwrite($myfile, "\n". $txt);
 		fclose($myfile);
 		
+		if(!isset($data['taxi']) || $data['taxi'] == ''){
+			$data['taxi'] = 'NONE';
+		}
+		
 		$message = \Swift_Message::newInstance()
 		->setSubject('Hääilmoittautuminen')
 		->setFrom('info@derfinne.ch')
