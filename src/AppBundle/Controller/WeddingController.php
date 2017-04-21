@@ -381,7 +381,7 @@ class WeddingController extends Controller
 		$musicwishes = (string)$data['musicwishes'];
 		$notices = (string)$data['notices'];
 		$password = (string)$data['password'];
-		$taxishuttle = isset($data['taxishuttle']) ? $data['taxishuttle'] : 'NONE';
+		$taxi = isset($data['taxi']) ? $data['taxi'] : 'NONE';
 		
 		$strLine = '';
 		$strLine .= $isattending.'|';
@@ -390,8 +390,8 @@ class WeddingController extends Controller
 		$strLine .= $musicwishes.'|';
 		$strLine .= $notices.'|';
 		$strLine .= $password.'|';
-		if($taxishuttle !== 'NONE'){
-			$strLine .= $taxishuttle.'|';
+		if($taxi !== 'NONE'){
+			$strLine .= $taxi.'|';
 		}
 		
 		$myfile = fopen("ilmoittautumiset.txt", "a") or die("Error. Registration failed!");
